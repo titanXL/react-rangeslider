@@ -124,6 +124,7 @@ import Slider from 'react-rangeslider'
   onChangeStart={Function}
   onChange={Function}
   onChangeComplete={Function}
+  show={Boolean}
 />
 ```
 
@@ -143,7 +144,7 @@ Prop   	 			 |  Type      |  Default      |  Description
 `onChangeStart`  	 |  function  |               |  function gets called whenever the user starts dragging the slider handle
 `onChange`  	 |  function  |               |  function gets called whenever the slider handle is being dragged or clicked
 `onChangeComplete`     |  function  |               |  function gets called whenever the user stops dragging the slider handle.
-
+`show`         |  boolean   |  false        | Always show tooltip
 
 ## Development
 To work on the project locally, you need to pull its dependencies and run `npm start`.
@@ -155,6 +156,9 @@ $ npm start
 
 ## Issues
 Feel free to contribute. Submit a Pull Request or open an issue for further discussion.
+
+## Changes
+Implemented a way for the tooltip to be always on.
 
 ## License
 MIT

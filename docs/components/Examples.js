@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Horizontal, Negative, Float, Labels, Orientation } from './sliders'
+import { Horizontal, Negative, Float, Labels, Orientation, Show } from './sliders'
 import Demo from './Demo'
 import Codeblock from './Codeblock'
 
@@ -8,6 +8,7 @@ import negativeExample from '!raw!./sliders/negative'
 import floatExample from '!raw!./sliders/float'
 import labelsExample from '!raw!./sliders/labels'
 import orientationExample from '!raw!./sliders/orientation'
+import showExample from '!raw!./sliders/show'
 
 class Examples extends Component {
   render () {
@@ -18,6 +19,12 @@ class Examples extends Component {
           <Horizontal />
           <Codeblock>
             {horizontalExample}
+          </Codeblock>
+        </Demo>
+        <Demo title='Basic Slider Tooltip always on'>
+          <Show />
+          <Codeblock>
+            {showExample}
           </Codeblock>
         </Demo>
         <Demo title='Negative Values (No Tooltip)'>
